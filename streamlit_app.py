@@ -41,8 +41,6 @@ try:
        # Puts it in a dataframe as a table
        streamlit.dataframe(fruityvice_normalized)
 
-except URLLError as e:
-    streamlit.error()
 
 #import snowflake.connector
 streamlit.header("View Our Fruit List - Add Your Favorites!")
