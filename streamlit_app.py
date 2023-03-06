@@ -40,6 +40,8 @@ try:
        
        # Puts it in a dataframe as a table
        streamlit.dataframe(fruityvice_normalized)
+except URLError as e:
+    streamlit.error()
 
 
 #import snowflake.connector
